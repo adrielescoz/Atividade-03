@@ -295,7 +295,7 @@ def main():
     parser = argparse.ArgumentParser(description="Cliente Modbus TCP para inversor (SENAI).")
     parser.add_argument("--host", type=str, help="IP do inversor (ex.: 192.168.0.10)")
     parser.add_argument("--port", type=int, default=502, help="Porta Modbus TCP (default 502)")
-    parser.add_argument("--slave", type=int, default=1, help="Slave ID (Unit ID)")
+    parser.add_argument("--slave", type=int, default=2, help="Slave ID (Unit ID)")
     parser.add_argument("--menu", action="store_true", help="Abrir menu interativo")
     args = parser.parse_args()
 
@@ -320,3 +320,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
